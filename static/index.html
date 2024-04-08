@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="images/logo.png">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.css">
+  <script src="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.min.js"></script>
+  <!-- style -->
+  <link rel="stylesheet" href="Memory-Game-&-API.css">
+  <!-- class -->
+  <script src="class/Api_data.js"></script>
+  <script src="class/Game_board.js"></script>
+  <script src="class/Playing_card_style.js"></script>
+  <!-- files js -->
+  <script src="files js/default.js"></script>
+  <script src="files js/buttons.js"></script>
+  <script src="files js/board_printing.js"></script>
+  <script src="files js/moves_and_win.js"></script>
+  <script src="files js/fetch_fun.js"></script>
+  <title>Memory-Game-&-API</title>
+
+
+
+</head>
+
+<body>
+  <div onselectstart="return false" onpaste="return false;" onCopy="return false" onCut="return false"
+    onDrag="return false" onDrop="return false" autocomplete=off>
+    <select onchange="select_first()" id="select_first" style="display:none" class="button select text-center" required>
+      <option class="button" value=""><b>Select a photo style type</b></option>
+      <option value="1" id=""><b>Harry Potter</b></option>
+      <option value="2" id=""><b>Dogs</b></option>
+      <option value="3" id=""><b>Digimon</b></option>
+      <option value="4" id=""><b>Pokémon</b></option>
+      <option value="5" id=""><b>Random</b></option>
+    </select>
+    <select onchange="select_two()" id="select_two" style="display:none" class="button select text-center" required>
+      <option class="button" value=""> Amount of Rounds</option>
+      <option value="1"><b>3</b></option>
+      <option value="2"><b>5</b></option>
+      <option value="3"><b>Unlimited</b></option>
+    </select>
+    <select onchange="select_Third()" id="select_Third" style="display:none" class="button select text-center" required>
+      <option class="button" value=""> board size</option>
+      <option value="1"><b>4X5 &nbsp; (20 cards)</b></option>
+      <option value="2"><b>6X6 &nbsp; (32 cards)</b></option>
+      <option value="3"><b>8X8 &nbsp; (64 cards)</b></option>
+      <option value="4"><b>10X10 &nbsp; (100 cards)</b></option>
+    </select>
+    <div class="row">
+      <div id="audio"></div>&nbsp;&nbsp;&nbsp;&nbsp;
+      <footer class="mr" style="color: rgba(4, 54, 4, 0.693);"><b> Michael Rozental 2023</b>&copy;</footer>
+      <div id="eye" style="display:none"><img src="images/eye.gif" onclick="Show_all_the_cards()"> </div>
+    </div>
+
+    <br />
+    <div class="col btn button" id="bar" style="display: none;">
+      <div id="round"></div>
+      <div id="player1"></div>
+      <div id="win"></div>
+    </div>
+    <div class="board" id="board"></div>
+    <audio></audio>
+  </div>
+</body>
+<script>
+  Create_authorized_buttons()
+
+</script>
+
+</html>
