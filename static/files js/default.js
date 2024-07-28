@@ -9,7 +9,7 @@ const Style_cards = new Playing_card_style(" ", " ", " ", " ")
 function changeBackground() {
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.display = "flex";
-  document.body.style.backgroundSize = "100% 100%";
+  document.body.style.backgroundSize = "110% 110%";
   const images = ["images/poketheme.jpg", "images/digimon.png", "images/HarryPotter.gif", "images/dog-.jpg"];
   const index = Math.floor(Math.random() * images.length);
   document.querySelector("body").style.backgroundImage = `url(${images[index]})`;
