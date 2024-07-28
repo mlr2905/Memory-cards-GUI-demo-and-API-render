@@ -1,6 +1,6 @@
 const Api = new Api_data(" ", " ", " ", " ")
 
-all_data()
+
 async function all_data() {
   const urls = {
     1: `https://hp-api.onrender.com/api/characters`, //HarryPotter
