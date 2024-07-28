@@ -7,6 +7,8 @@ body {
   background-repeat: no-repeat;
   background-image: url("images/poketheme.jpg");
   background-color: black;
+  zoom: 0.9; /* 90% */
+
 }
 
 *[class~="board"] {
@@ -297,5 +299,4 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 9999;
-  /* ערך גבוה כדי להבטיח שהתמונה תהיה מעל כולם */
 }
