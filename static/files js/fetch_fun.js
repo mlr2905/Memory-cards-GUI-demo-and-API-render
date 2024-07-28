@@ -21,3 +21,4 @@ async function all_data() {
   document.getElementById('loading-icon').style.display = 'none';
 
 }
+all_data()
