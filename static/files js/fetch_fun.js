@@ -18,4 +18,6 @@ async function all_data() {
       Api["data" + i] = JSON.parse(localStorage.getItem("data" + i));
     }
   }
+  document.getElementById('loading-icon').style.display = 'none';
+
 }

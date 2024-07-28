@@ -286,3 +286,16 @@ img {
 .col {
   font-weight: bold;
 }
+
+#loading-icon {
+  display: block;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  /* ערך גבוה כדי להבטיח שהתמונה תהיה מעל כולם */
+}
