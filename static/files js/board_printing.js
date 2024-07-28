@@ -100,7 +100,8 @@ function Hide_all_the_cards() {
     a.push(pair[0], pair[1]);
   }
   for (let i = 0; i < a.length; i++) {
-    Hide_div_son_show_father(a[i])
+    hide_div_son_show_father(a[i])
+    
   }
 }
 
